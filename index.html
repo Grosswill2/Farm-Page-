@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MadJax Farm</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdfbf8;
+      color: #333;
+    }
+    header {
+      background-color: #edeae0;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #ccc4b9;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .product {
+      background-color: #f7f4ef;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button {
+      background-color: #786c5b;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #edeae0;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MadJax Farm</h1>
+    <p>Farm-Raised Meats, Eggs, and Goat Milk Products</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>MadJax Farm</strong> — a small family farm committed to raising animals naturally and providing wholesome products straight from our land to your home. We take pride in our sustainable practices and love for quality, clean living.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <h3>Farm-Raised Meats</h3>
+        <p>Beef, pork, and poultry raised responsibly on pasture. Cuts available upon request.</p>
+      </div>
+      <div class="product">
+        <h3>Fresh Eggs</h3>
+        <p>Daily collected farm-fresh eggs from our free-range hens.</p>
+      </div>
+      <div class="product">
+        <h3>Goat Milk Soap</h3>
+        <p>Handmade bars with natural ingredients and nourishing goat milk.</p>
+      </div>
+      <div class="product">
+        <h3>Beauty Products</h3>
+        <p>Lotions, balms, and scrubs made with pure goat milk and essential oils.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="order">
+  <h2>Place an Order</h2>
+  <p>Fill out the form below to request products. We’ll get back to you with availability and pickup/shipping options.</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your Full Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="you@example.com" required>
+
+    <label for="products">Products:</label>
+    <textarea id="products" rows="5" placeholder="List the items you’d like to order (e.g., 2 dozen eggs, 1 bar goat milk soap)"></textarea>
+
+    <label for="notes">Additional Notes:</label>
+    <textarea id="notes" rows="3" placeholder="Questions, delivery preferences, etc."></textarea>
+
+    <button type="submit">Submit Order Request</button>
+  </form>
+</section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: hello@madjaxfarm.com<br>
+    Phone: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    &copy; 2025 MadJax Farm. All rights reserved.
+  </footer>
+
+</body>
+</html>
